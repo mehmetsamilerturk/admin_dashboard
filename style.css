@@ -191,6 +191,10 @@ input[type="search"]:focus {
   background-color: yellow;
 }
 
+.trending>div>img {
+  border: 1px solid yellow;
+}
+
 .search-bar {
   display: grid;
   grid-template-columns: 1fr 8fr;
@@ -271,9 +275,6 @@ input[type="search"]:focus {
   margin-left: 20px;
 }
 
-.anno-heading {
-}
-
 .trending-heading {
   align-self: end;
 }
@@ -301,6 +302,9 @@ input[type="search"]:focus {
 }
 
 .announcements {
+  display: grid;
+  grid-template-rows: 30px repeat(3, 1fr) 30px;
+  grid-template-columns: 20px 1fr 20px;
   background-color: white;
 }
 
@@ -310,8 +314,26 @@ input[type="search"]:focus {
   gap: 10px;
 }
 
+.trending-profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .trending {
+  display: flex;
+  flex-direction: column;
   background-color: white;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.trending>div {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  gap: 15px;
 }
 
 .projects {
@@ -333,7 +355,15 @@ input[type="search"]:focus {
 }
 
 .card-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
+}
+
+.card-icons-container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .orange-line {
