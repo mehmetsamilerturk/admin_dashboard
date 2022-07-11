@@ -59,18 +59,11 @@ input[type="search"]:focus {
   gap: 10px;
 }
 
-.smaller-pp {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: yellow;
-}
-
 .anno-card-heading {
   font-weight: bold;
 }
 
-.trending>div>img {
+.trending>div>.smaller-pp {
   border: 1px solid yellow;
 }
 
@@ -192,7 +185,8 @@ input[type="search"]:focus {
   gap: 30px;
 }
 
-.main-right div {
+.announcements,
+.trending {
   border-radius: 10px;
 }
 
@@ -290,4 +284,11 @@ input[type="search"]:focus {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+.smaller-pp {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: yellow;
 }
